@@ -25,11 +25,11 @@ function afficherTweet(data) {
     var nav = document.getElementById("tweet_list");
 
     for (var i in data.statuses) {
-
+    if (data.statuses[i].coordinates != null ) {
         var li = document.createElement("div");
         li.innerHTML = data.statuses[i].text;
         nav.appendChild(li);
-        if (data.statuses[i].coordinates != null ) {
+    
 
           //  alert(data.statuses[i].coordinates.coordinates[0] + " " + data.statuses[i].coordinates.coordinates[1]);
             console.log(data.statuses[i]);
