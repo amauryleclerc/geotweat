@@ -1,7 +1,4 @@
-@media only screen 
-and (max-device-width : 320px) 
-and (min-device-width : 480px) {
-    
+@media only screen and (min-width : 1224px){
 
 body {
     min-width: 800px;
@@ -100,7 +97,7 @@ section h1{
     transform: rotate(90deg);
 	
    	color: white;
-position: fixed;
+position: absolute;
  top: 100px;
    
 }
@@ -131,6 +128,5 @@ position: fixed;
     left:70%;
 }
 
-
-
 }
+

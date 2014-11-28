@@ -12,23 +12,25 @@ body {
 }
 
 header {
-    height: 40px;
+    position: fixed;
+    height: 50px;
     border: 1px solid black;
     line-height: 40px;
-    padding: 5px;
+    right: 0;
+    left: 0;
     background-color: rgb(181, 208, 208);
 }
 
 input[type="text"] {
     border: 2px solid grey;
     padding: 5px;
-    font-size: 14pt;
+    font-size: 10pt;
 }
 
 input[type="submit"] {
     border: 2px solid black;
     padding: 5px;
-    font-size: 14pt;
+    font-size: 10pt;
     background: #008C9E;
     cursor: pointer;
     border-radius: 5px;
@@ -37,13 +39,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #005F6B;
-}
-
-select {
-    cursor: pointer;
-    font-size: 14pt;
-    border: 2px solid black;
-    border-radius: 5px;
 }
 
 
@@ -93,30 +88,33 @@ section h1{
     transform: rotate(90deg);
 	
    	color: white;
-position: fixed;
- top: 100px;
-   
+        //position: block;
+ 
+    position:absolute;
+       top: 10%;
+       left: 0 ;
 }
-/*
+
 #map {
     position:fixed;
     top: 50px;
-    right: 80px;
+    right: 10%;
     bottom: 0px;
     left: 0px;
     border: 1px solid black;
 }
 
-*/
+
 
 #map_sec{
      position:fixed;
     top: 50px;
-    right: 5%;
+    right: 10%;
     bottom: 0px;
     left: 0px;
     border: 1px solid black;
 }
+
 #tweet_sec {
     border: 1px solid black;
     position:fixed;
@@ -124,8 +122,8 @@ position: fixed;
     bottom: 0px;
     right: 0px;
     margin: 0;
-    width: 30%;
-    left:95%;
+    width: 90%;
+    left:90%;
     background-color: #565A5A;
     color: white;
     overflow-y: auto;
@@ -141,7 +139,7 @@ position: fixed;
     -o-transition: left 1s ;
     transition: left 1s ;
 
-    left:70%;
+    left:10%;
 }
 
 
