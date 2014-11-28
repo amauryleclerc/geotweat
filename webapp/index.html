@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
 
 
-    <title>GeoTweet</title>
+        <title>GeoTweet</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/geotweet.css">
-    <link rel=icon href=img/twitter.png sizes="16x16" type="image/png">
+        <link rel="stylesheet"  href="css/reset.css" type="text/css">
+        <link rel="stylesheet"  href="css/geotweet.css" type="text/css">
+        <link rel="stylesheet"  href="css/geotweet_mobile.css" type="text/css" />
+        <link rel=icon href=img/twitter.png sizes="16x16" type="image/png">
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
         <script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
+        <script src="lib/jquery-1.11.1.min.js"></script>
+        <script src="js/geotweet.js"></script>
+    </head>
 
-    <script src="lib/jquery-1.11.1.min.js"></script>
-    <script src="js/geotweet.js"></script>
-  </head>
+    <body onload="afficherCarte()">
+        <header>
 
-  <body onload="afficherCarte()">
-    <header>
+            <input type="text" name="hashtag" id="id_hashtag" placeholder="#hashtag" onchange="dlJson()"/>
+            <input type="submit" value="rafraichir" onclick="dlJson()"/>
+            <img id="search_spinner" src="img/spinner.gif" width="32" height="32"/>
+        </header>
+        <section id="map_sec">
+            <h1>Carte</h1>
+            <div id="map" class="map"></div>
+        </section>
+        <section id="tweet_sec">
+            <h1>Tweet</h1>
+            <nav id="tweet_list">
+            </nav>
+        </section>
 
-        <input type="text" name="hashtag" id="id_hashtag" placeholder="#hashtag" onchange="dlJson()"/>
-        <input type="submit" value="rafraichir" onclick="dlJson()"/>
-<img id="search_spinner" src="img/spinner.gif" width="32" height="32"/>
-    </header>
-<section id="map_sec">
-<h1>Carte</h1>
-    <div id="map" class="map"></div>
-</section>
-<section id="tweet_sec">
-<h1>Tweet</h1>
-    <nav id="tweet_list">
-    </nav>
-</section>
-    
 
-  </body>
+    </body>
 
 </html>
