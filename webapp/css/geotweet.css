@@ -10,7 +10,7 @@ header {
     border: 1px solid black;
     line-height: 40px;
     padding: 5px;
-    background-color: #343838;
+    background-color: rgb(181, 208, 208);
 }
 
 input[type="text"] {
@@ -43,26 +43,16 @@ select {
 #map {
     position:fixed;
     top: 50px;
-    right: 480px;
+    right: 80px;
     bottom: 0px;
     left: 0px;
     border: 1px solid black;
 }
 
-nav {
-    border: 1px solid black;
-    position:fixed;
-    top: 50px;
-    bottom: 0px;
-    right: 0px;
-    margin: 0;
-    width: 480px;
-    background-color: #565A5A;
-    color: white;
-    overflow-y: auto;
-    word-wrap: break-word;
-}
 
+nav {
+    list-style-type:none; 
+}
 nav h1 {
     text-align: center;
     font-size: 140%;
@@ -70,32 +60,71 @@ nav h1 {
     margin-bottom: 10px;
 }
 
-nav div p {
+nav li p {
     margin-top: 3px;
     margin-bottom: 5px;
 }
 
-nav div {
+nav li {
     padding: 5px;
+	margin-left: 15%;
     border-top: 1px solid white;
     cursor: pointer;
 }
 
-nav div:nth-child(even) {
+nav li:nth-child(even) {
     background-color: #676B6B; 
     color: white;
 }
 
-nav div:hover {
+nav li:hover {
     color: black;
     background-color: #00DFFC;
 }
 
 #search_spinner {
-    z-index: 1;
+
     display: none;
-    position: fixed;
-    bottom: 4px;
-    right: 484px;
+
 }
+section h1{
+ -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+	
+   	color: white;
+position: fixed;
+ top: 100px;
+   
+}
+#tweet_sec {
+    border: 1px solid black;
+    position:fixed;
+    top: 50px;
+    bottom: 0px;
+    right: 0px;
+    margin: 0;
+    width: 30%;
+    left:95%;
+    background-color: #565A5A;
+    color: white;
+    overflow-y: auto;
+    word-wrap: break-word;
+        -webkit-transition: left 1s ;
+    -moz-transition: left 1s ;
+    -o-transition: left 1s ;
+    transition: left 1s ;
+}
+#tweet_sec:hover {
+    -webkit-transition: left 1s ;
+    -moz-transition: left 1s ;
+    -o-transition: left 1s ;
+    transition: left 1s ;
+
+    left:70%;
+}
+
+
 
